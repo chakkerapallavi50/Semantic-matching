@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Load T5 model and tokenizer once (to avoid reloading for every query)
 tokenizer = T5Tokenizer.from_pretrained("t5-small")
-model = T5EncoderModel.from_pretrained("t5-small")
+model = T5EncoderModel.from_pretrained("t5- small")
 
 def encode_text(text):
     inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
